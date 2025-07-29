@@ -3,7 +3,6 @@
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
-/* eslint-disable @typescript-eslint/no-explicit-any */
 
 type WavyBackgroundProps = {
   children?: React.ReactNode;
@@ -15,7 +14,7 @@ type WavyBackgroundProps = {
   blur?: number;
   speed?: "slow" | "fast";
   waveOpacity?: number;
-  [key: string]: any;
+[key: string]: unknown;
 };
 
 export const WavyBackground: React.FC<WavyBackgroundProps> = ({
@@ -30,7 +29,7 @@ export const WavyBackground: React.FC<WavyBackgroundProps> = ({
   waveOpacity = 0.5,
   ...props
 }) => {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const animationIdRef = useRef<number | null>(null);
   const noise = createNoise3D();
 
@@ -88,7 +87,6 @@ export const WavyBackground: React.FC<WavyBackgroundProps> = ({
       ctx.filter = `blur(${blur}px)`;
     };
   };
-/* eslint-disable react-hooks/exhaustive-deps */
 
   useEffect(() => {
     init();

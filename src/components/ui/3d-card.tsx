@@ -94,8 +94,6 @@ export const CardBody = ({
     </div>
   );
 };
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable react-hooks/exhaustive-deps */
 
 
 export const CardItem = ({
