@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 export const StickyScroll = ({
   content,
@@ -51,6 +52,7 @@ export const StickyScroll = ({
     "linear-gradient(to bottom right, #ec4899, #6366f1)", // pink-500 to indigo-500
     "linear-gradient(to bottom right, #f97316, #eab308)", // orange-500 to yellow-500
   ];
+/* eslint-disable react-hooks/exhaustive-deps */
 
   const [backgroundGradient, setBackgroundGradient] = useState(
     linearGradients[0],

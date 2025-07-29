@@ -47,8 +47,7 @@ function MusicSchoolTestimonials() {
           "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
         )}
       />
-          <div className="h-[40rem] w-full relative flex flex-col items-center justify-center overflow-hidden">
-
+      <div className="h-[40rem] w-full relative flex flex-col items-center justify-center overflow-hidden">
         <h2 className="text-3xl font-bold text-center mb-8 z-10">
           Hear our Harmony: Voices of success
         </h2>
@@ -61,7 +60,7 @@ function MusicSchoolTestimonials() {
             />
           </div>
         </div>
-    </div>
+      </div>
     </div>
   );
 }

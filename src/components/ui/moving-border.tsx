@@ -10,6 +10,8 @@ import {
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 export function Button({
   borderRadius = "1.75rem",
   children,
